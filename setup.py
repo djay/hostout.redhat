@@ -18,7 +18,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-name = "hostout.ubuntu"
+name = "hostout.redhat"
 setup(
     name = name,
     version = "1.0a1",
@@ -31,7 +31,7 @@ setup(
     long_description=(
         read('README.txt')
         + '\n' +
-        read('hostout', 'ubuntu', 'README.txt')
+        read('hostout', 'redhat', 'README.txt')
         + '\n' +
         read('CHANGES.txt')
         + '\n' 
@@ -47,8 +47,8 @@ setup(
                         'setuptools',
                         'collective.hostout',
                         ],
-    entry_points = {'zc.buildout':
-                    ['default = hostout.ubuntu:Recipe']
+    entry_points = {'zc.buildout':['default = hostout.redhat:Recipe'],
+                    'fabric': ['fabfile = hostout.redhat.fabfile']
                     },
     zip_safe = False,
     )
