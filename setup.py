@@ -24,7 +24,7 @@ setup(
     version = "1.0a1",
     author = "Dylan Jay",
     author_email = "software@pretaweb.com",
-    description = """Plugin for collective.hostout that bootstraps an ubuntu host ready for hostout deployment""",
+    description = """Plugin for collective.hostout that bootstraps an ubuntu host ready for redhat deployment""",
     license = "GPL",
     keywords = "buildout, fabric, deploy, deployment, server, plone, django, host, hosting",
     url='https://svn.plone.org/svn/collective/'+name,

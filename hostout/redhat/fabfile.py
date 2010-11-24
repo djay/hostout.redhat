@@ -95,7 +95,7 @@ def bootstrap():
     api.sudo('gpasswd -a %(effective)s %(buildoutgroup)s' % locals())
 
 
-    hostout.setaccess()
+    hostout.setupusers()
 
     path = api.env.path
     api.sudo('mkdir -p %(path)s' % locals())
